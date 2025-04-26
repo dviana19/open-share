@@ -7,9 +7,9 @@
 
 Open Share is an open-source application designed for secure password sharing. It provides a simple and secure way to share sensitive information with others while maintaining control over access and visibility.
 
-## About
+## Production
 
-This app provides a quick and secure way to share passwords. It's designed for simplicity, security, and peace of mind.
+You can see the app running here (https://passshare.me/)[https://passshare.me/].
 
 ## Features
 

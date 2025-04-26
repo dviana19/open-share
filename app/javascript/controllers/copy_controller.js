@@ -11,7 +11,7 @@ export default class extends Controller {
   toClipboard() {
     let contentText;
     let buttonText = this.buttonTarget.textContent;
-    if (this.contentTarget.type === 'password') {
+    if (this.contentTarget.type === 'password' || this.contentTarget.type === 'text') {
       contentText = this.contentTarget.value;
     } else {
       contentText = this.contentTarget.textContent;
