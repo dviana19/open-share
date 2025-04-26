@@ -9,7 +9,7 @@ Open Share is an open-source application designed for secure password sharing. I
 
 ## Production
 
-You can see the app running here (https://passshare.me/)[https://passshare.me/].
+You can see the app running here [https://passshare.me](https://passshare.me)
 
 ## Features
 
