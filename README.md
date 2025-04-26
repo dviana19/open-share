@@ -1,7 +1,7 @@
 # Open Share
 
-[![Ruby Version](https://img.shields.io/badge/ruby-3.4.2-red.svg)](https://www.ruby-lang.org/)
-[![Rails Version](https://img.shields.io/badge/rails-7.1.3-red.svg)](https://rubyonrails.org/)
+[![Ruby Version](https://img.shields.io/badge/ruby-3.4.2-green.svg)](https://www.ruby-lang.org/)
+[![Rails Version](https://img.shields.io/badge/rails-8.0.2-green.svg)](https://rubyonrails.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/your-username/open-share/pulls)
 
@@ -9,7 +9,7 @@ Open Share is an open-source application designed for secure password sharing. I
 
 ## About
 
-This app provides a quick and secure way to share passwords, similar to sending a self-destructing message. It's designed for simplicity, security, and peace of mind.
+This app provides a quick and secure way to share passwords. It's designed for simplicity, security, and peace of mind.
 
 ## Features
 
