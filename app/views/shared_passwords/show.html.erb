@@ -1,0 +1,31 @@
+<h1><%= t('common.title') %></h1>
+
+<% if @shared_password.expired? %>
+  <div class="error-container">
+    <div class="error-icon">⚠️</div>
+    <div class="error-content">
+      <h2><%= t('.expired_title') %></h2>
+      <p><%= t('.expired_message') %></p>
+    </div>
+  </div>
+  <p><%= link_to t('common.create_new_password_button'), new_shared_password_path %></p>
+<% else %>
+  <div data-controller="copy">
+    <div class="password-container">
+      <input aria-label="Read-only input"
+            class="password"
+            value="<%= @shared_password.decrypted_password(params[:e]) %>"
+            type="password"
+            data-copy-target="content"
+            readonly />
+      <div class="toggle-container">
+        <label>
+          <input type="checkbox" class="toggle-password" data-action="copy#togglePassword" />
+          <%= t('.show_password') %>
+        </label>
+      </div>
+    </div>
+    <button class="copy-btn" id="copyBtn" data-copy-target="button" data-action="copy#toClipboard"><%= t('.copy_password') %></button>
+  </div>
+<% end %>
+

@@ -1,0 +1,6 @@
+<h1><%= t('common.title') %></h1>
+<%= turbo_frame_tag SharedPassword.new do %>
+  <%= render "form", shared_password: @shared_password %>
+<% end %>
+
+<%= turbo_frame_tag 'result' %>

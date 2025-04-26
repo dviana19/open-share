@@ -1,0 +1,22 @@
+en:
+  common:
+    title: "Password Share"
+    not_found: "Password Not Found"
+    not_found_message: "The password link you're looking for doesn't exist."
+    create_new_password_button: "Create a new password"
+    share_link: "Share this link:"
+    copy_link: "Copy Link"
+  shared_passwords:
+    form:
+      password_placeholder: "Password to share..."
+      expiration_time_label: "Expiration Time"
+      expiration_time_options:
+        one_hour: "1 Hour"
+        one_day: "1 Day"
+        one_week: "1 Week"
+      submit_button: "Generate Link"
+    show:
+      expired_title: "Password Expired"
+      expired_message: "This password link has expired and is no longer available."
+      show_password: "Show Password"
+      copy_password: "Copy Password"

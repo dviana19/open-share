@@ -1,0 +1,10 @@
+<%= turbo_stream.update SharedPassword.new do %>
+  <%= render partial: "form", locals: { shared_password: SharedPassword.new } %>
+<% end %>
+<%= turbo_stream.append "result" do %>
+  <div class="link-container" id="linkContainer" data-controller="copy">
+    <p><%= t('common.share_link') %></p>
+    <p class="link" id="shareLink" data-copy-target="content"><%= sharable_url(@shared_password) %></p>
+    <button class="copy-btn" id="copyBtn" data-copy-target="button" data-action="copy#toClipboard"><%= t('common.copy_link') %></button>
+  </div>
+<% end %>

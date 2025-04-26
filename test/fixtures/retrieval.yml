@@ -1,0 +1,30 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# == Schema Information
+#
+# Table name: retrieval
+#
+#  id                 :integer          not null, primary key
+#  ip_address         :string
+#  user_agent         :string
+#  created_at         :datetime         not null
+#  updated_at         :datetime         not null
+#  shared_password_id :integer          not null
+#
+# Indexes
+#
+#  index_retrieval_on_shared_password_id  (shared_password_id)
+#
+# Foreign Keys
+#
+#  shared_password_id  (shared_password_id => shared_password.id)
+#
+retrieval_one:
+  ip_address: 127.0.0.1
+  user_agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+  shared_password: shared_password_one
+
+retrieval_two:
+  ip_address: 127.0.0.1
+  user_agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+  shared_password: shared_password_two

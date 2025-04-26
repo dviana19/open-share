@@ -1,0 +1,24 @@
+<%= form_with(model: shared_password, id: 'passwordForm') do |form| %>
+  <div class="form-group">
+    <%= form.password_field :password, autocomplete: 'off', placeholder: t('.password_placeholder') %>
+    <%= render_form_errors(form) %>
+  </div>
+  <div class="form-group">
+    <label><%= t('.expiration_time_label') %></label>
+    <div class="radio-group">
+      <div class="radio-option">
+        <%= form.radio_button :expires_in, "1", checked: true, required: true, id: "shared_password_exp1" %>
+        <%= form.label :exp1, t('.expiration_time_options.one_hour') %>
+      </div>
+      <div class="radio-option">
+        <%= form.radio_button :expires_in, "24", required: true, id: "shared_password_exp24" %>
+        <%= form.label :exp24, t('.expiration_time_options.one_day') %>
+      </div>
+      <div class="radio-option">
+        <%= form.radio_button :expires_in, "168", required: true, id: "shared_password_exp168" %>
+        <%= form.label :exp168, t('.expiration_time_options.one_week') %>
+      </div>
+    </div>
+  </div>
+  <%= form.button t('.submit_button'), type: 'submit' %>
+<% end %>
